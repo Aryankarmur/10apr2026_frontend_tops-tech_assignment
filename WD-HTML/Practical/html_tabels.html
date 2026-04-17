@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel in html</title>
+    <style>
+        
+        table, tr, td, th{
+            border: 1px solid black;
+            text-align: center;
+            border-collapse: collapse;
+            padding: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <table>
+        <thead> 
+            <h2>product catalog table </h2>
+        </thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Availability</th>
+        </tr>
+        <tr>
+            <th colspan="4"></th>
+            <th>in stock | out of stock</th>
+        </tr>
+
+        <tr>
+            <td>Mobile</td>
+            <td><img src="https://placehold.co/400" alt="product image" width="100px"></td>
+            <td>$1200</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, culpa!</td>
+            <td> in stock </td>
+        </tr>
+        <tr>
+            <td>Watch</td>
+            <td><img src="https://placehold.co/400" alt="product image" width="100px"></td>
+            <td rowspan="2">$20</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, culpa!</td>
+            <td> in stock </td>
+        </tr>
+        <tr>
+            <td>Bracelet</td>
+            <td><img src="https://placehold.co/400" alt="product image" width="100px"></td>
+            
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, culpa!</td>
+            <td> out of stock </td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td><img src="https://placehold.co/400" alt="product image" width="100px"></td>
+            <td>$5000</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, culpa!</td>
+            <td> in stock </td>
+        </tr>
+
+    </table>
+</body>
+</html>
