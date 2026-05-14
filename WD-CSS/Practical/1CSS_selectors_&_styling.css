@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  background-color: #80ebf3;
+}
+#detailesfield {
+  display: grid;
+  gap: 1rem;
+}
+ label {
+  font-size: 15px;
+  font-weight: 500;
+}
+label input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+label textarea {
+  border-radius: 10px;
+  padding: 4px;
+}
+ button {
+  display: grid;
+  place-self: center;
+  place-items: center;
+  margin-top: 5px;
+  width: 90px;
+  height: 30px;
+  border: 1.8px solid black;
+  border-radius: 10px;
+  background-color: #3dcf69;
+  cursor: pointer;
+  font-size: 14.5px;
+  font-weight: 400;
+}
+
+button:hover{
+    background-color: #8fce3e;
+}
