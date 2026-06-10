@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Tasks</title>
+</head>
+<body>
+
+  <!-- Task 1, 2, 3 -->
+  <section>
+    <h3>Task 1, 2, 3</h3>
+    <div id="greeting"></div>
+  </section>
+
+  <!-- Task 4, 5 -->
+  <section>
+    <h3>Task 4, 5</h3>
+
+    <input
+      type="text"
+      id="song-input"
+      placeholder="Enter song name"
+    />
+
+    <button id="add-song-btn">
+      Add Song
+    </button>
+
+    <ul id="playlist"></ul>
+  </section>
+
+  <!-- Task 6 -->
+  <section>
+    <h3>Task 6</h3>
+
+    <input
+      type="text"
+      id="friend-input"
+      placeholder="Enter friend name"
+    />
+
+    <button id="add-friend-btn">
+      Add Friend
+    </button>
+
+    <ul id="friend-list"></ul>
+  </section>
+
+  <!-- Task 7, 8 -->
+  <section>
+    <h3>Task 7, 8</h3>
+
+    <h2 id="offer">
+      Original Offer
+    </h2>
+  </section>
+
+  <!-- Task 9 -->
+  <section>
+    <h3>Task 9</h3>
+
+    <button id="mode-btn">
+      Dark Mode
+    </button>
+  </section>
+
+  <!-- Task 10, 11 -->
+  <section>
+    <h3>Task 10, 11</h3>
+
+    <input
+      type="text"
+      id="color-input"
+      placeholder="Type a color"
+    />
+
+    <div id="moodbox"></div>
+  </section>
+
+  <!-- Task 12 -->
+  <section>
+    <h3>Task 12</h3>
+
+    <p>
+      Now Playing:
+      <span id="song-title">
+        Shape of You
+      </span>
+    </p>
+
+    <button id="change-song-btn">
+      Change Song
+    </button>
+  </section>
+
+  <script>
+
+    // =========================
+    // Task 1, 2, 3
+    // =========================
+
+    const greeting =
+      document.getElementById("greeting");
+
+    greeting.innerHTML =
+      "Hello, welcome to your playlist!";
+
+
+    // =========================
+    // Task 4, 5
+    // =========================
+
+    const addSongBtn =
+      document.querySelector("#add-song-btn");
+
+    addSongBtn.addEventListener(
+      "click",
+      () => {
+
+        const songInput =
+          document.querySelector("#song-input");
+
+        const playlist =
+          document.querySelector("#playlist");
+
+        const li =
+          document.createElement("li");
+
+        li.textContent =
+          songInput.value;
+
+        playlist.appendChild(li);
+
+        songInput.value = "";
+      }
+    );
+
+
+    // =========================
+    // Task 6
+    // =========================
+
+    const addFriendBtn =
+      document.querySelector("#add-friend-btn");
+
+    addFriendBtn.addEventListener(
+      "click",
+      () => {
+
+        const friendInput =
+          document.querySelector("#friend-input");
+
+        const friendList =
+          document.querySelector("#friend-list");
+
+        const li =
+          document.createElement("li");
+
+        li.textContent =
+          friendInput.value;
+
+        friendList.appendChild(li);
+
+        friendInput.value = "";
+      }
+    );
+
+
+    // =========================
+    // Task 7, 8
+    // =========================
+
+    const offer =
+      document.getElementById("offer");
+
+    offer.innerHTML =
+      "Flat 50% Off on Zomato Today!";
+
+    offer.style.color = "red";
+
+
+    // =========================
+    // Task 9
+    // =========================
+
+    const modeBtn =
+      document.getElementById("mode-btn");
+
+    let darkMode = false;
+
+    modeBtn.addEventListener(
+      "click",
+      () => {
+
+        if (!darkMode) {
+
+          document.body.style.backgroundColor =
+            "black";
+
+          document.body.style.color =
+            "white";
+
+          modeBtn.textContent =
+            "Light Mode";
+
+          darkMode = true;
+
+        } else {
+
+          document.body.style.backgroundColor =
+            "white";
+
+          document.body.style.color =
+            "black";
+
+          modeBtn.textContent =
+            "Dark Mode";
+
+          darkMode = false;
+        }
+      }
+    );
+
+
+    // =========================
+    // Task 10, 11
+    // =========================
+
+    const colorInput =
+      document.getElementById("color-input");
+
+    const moodbox =
+      document.getElementById("moodbox");
+
+    colorInput.addEventListener(
+      "input",
+      () => {
+
+        moodbox.style.backgroundColor =
+          colorInput.value;
+      }
+    );
+
+
+    // =========================
+    // Task 12
+    // =========================
+
+    const songs = [
+      "Believer",
+      "Perfect",
+      "Blinding Lights",
+      "Levitating",
+      "Heat Waves"
+    ];
+
+    const songTitle =
+      document.getElementById("song-title");
+
+    const changeSongBtn =
+      document.getElementById("change-song-btn");
+
+    let index = 0;
+
+    changeSongBtn.addEventListener(
+      "click",
+      () => {
+
+        index++;
+
+        if (index >= songs.length) {
+          index = 0;
+        }
+
+        songTitle.innerHTML =
+          songs[index];
+      }
+    );
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playlist Manager</title>
+    <link rel="stylesheet" href="./playlist.css" />
+  </head>
+  <body>
+    <h2>Create Playlist</h2>
+
+    <form id="playlist-form">
+      <input
+        type="text"
+        id="playlist-name"
+        placeholder="Playlist Name"
+        required
+      />
+
+      <input
+        type="text"
+        id="playlist-description"
+        placeholder="Description"
+        required
+      />
+
+      <button type="submit">Save Playlist</button>
+    </form>
+
+    <div id="playlist-list"></div>
+
+    <script src="./playlist.js"></script>
+  </body>
+</html>

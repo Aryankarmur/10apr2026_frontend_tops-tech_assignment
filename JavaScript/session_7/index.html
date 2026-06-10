@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Events Tasks</title>
+
+  <!-- CSS Defined Here -->
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+  <!-- Task 1, 2 -->
+  <section>
+    <h3>Task 1, 2</h3>
+    <button onclick="songAdded()">Add to Playlist</button>
+  </section>
+
+  <!-- Task 3 -->
+  <section>
+    <h3>Task 3</h3>
+    <button onclick="addSongCard()">Add Song</button>
+    <div id="song-cards"></div>
+  </section>
+
+  <!-- Task 4, 5 -->
+  <section>
+    <h3>Task 4, 5</h3>
+    <input
+      type="text"
+      id="username"
+      placeholder="Enter Username"
+      onchange="logUsername(this)"
+    >
+  </section>
+
+  <!-- Task 6 -->
+  <section>
+    <h3>Task 6</h3>
+
+    <select id="cuisine" onchange="showCuisine()">
+      <option>Indian</option>
+      <option>Chinese</option>
+      <option>Italian</option>
+    </select>
+
+    <input type="number" placeholder="Quantity">
+
+    <p id="cuisine-msg"></p>
+  </section>
+
+  <!-- Task 7, 8 -->
+  <section>
+    <h3>Task 7, 8</h3>
+    <button id="like-btn">❤️ Like (0)</button>
+  </section>
+
+  <!-- Task 9 -->
+  <section>
+    <h3>Task 9</h3>
+
+    <button id="cart-btn">
+      Add to Cart
+    </button>
+
+    <ul id="cart"></ul>
+  </section>
+
+  <!-- Task 10, 11 -->
+  <section>
+    <h3>Task 10, 11</h3>
+
+    <div id="movies">
+      <div class="movie">
+        Avengers
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <div class="movie">
+        Interstellar
+        <button class="remove-btn">Remove</button>
+      </div>
+
+      <div class="movie">
+        Inception
+        <button class="remove-btn">Remove</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Task 12 -->
+  <section>
+    <h3>Task 12</h3>
+
+    <div id="click-area">
+      Click Anywhere Here
+    </div>
+
+    <p id="coordinates"></p>
+  </section>
+
+  <!-- Task 13, 14 -->
+  <section>
+    <h3>Task 13, 14</h3>
+
+    <button id="flipkart-cart">
+      Add to Cart
+    </button>
+  </section>
+
+  <script src="./index.js"></script>
+
+</body>
+</html>
