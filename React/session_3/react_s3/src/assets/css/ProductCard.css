@@ -1,0 +1,24 @@
+.product_main{
+    width: 200px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+.product_main .prd_img{
+    width: 200px;
+    height: 200px;
+}
+.product_main .prd_img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.product_main .p_name{
+    font-size: 25px;
+}
+.product_main .p_price{
+    font-size: 15px;
+}
+

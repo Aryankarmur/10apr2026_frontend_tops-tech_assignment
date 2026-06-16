@@ -1,0 +1,31 @@
+.profile_main{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    width: 400px;
+}
+.profile_main .img_div{
+    width: 200px;
+    height: 200px;
+}
+.profile_main .img_div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.profile_main .info .u_name{
+    font-size: 25px;
+    font-weight: 500;
+}
+.profile_main .info .u_followers{
+    display: flex;
+    flex-direction: column;
+}
+.profile_main .info .u_followers span:first-child{
+    font-size: 20px;
+}
+.profile_main .info .u_followers span:last-child{
+    font-size: 26px;
+}

@@ -1,0 +1,14 @@
+.like{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.like button{
+    font-size: 30px;
+    color: red;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
